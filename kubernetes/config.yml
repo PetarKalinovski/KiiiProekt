@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: player-app-config
+  namespace: players
+data:
+  SPRING_DATASOURCE_URL: "jdbc:postgresql://db:5432/player"
+  SPRING_H2_CONSOLE_ENABLED: "true"
+  SPRING_H2_CONSOLE_PATH: "/h2"
+  SPRING_JPA_DEFER_DATASOURCE_INITIALIZATION: "true"
+  SPRING_H2_CONSOLE_SETTINGS_TRACE: "false"
+  SPRING_SQL_INIT_MODE: "always"
+  SPRING_SQL_INIT_PLATFORM: "postgres"
+  SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT: "org.hibernate.dialect.PostgreSQLDialect"
+  POSTGRES_DB: "player"
