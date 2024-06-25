@@ -19,6 +19,9 @@ jobs:
           java-version: '17'
           distribution: 'temurin' # You can change this to another distribution if needed
 
+      - name: Grant execute permission for Maven Wrapper
+        run: chmod +x ./mvnw
+
       - name: Build with Maven (skip tests)
         run: mvn -f ./pom.xml clean package -DskipTests # repo relative path
 
