@@ -9,7 +9,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: player.app.com
+    - host: playerpetar.app.com
       http:
         paths:
           - path: /(.*)
